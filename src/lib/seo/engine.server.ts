@@ -30,7 +30,7 @@ function extractLocs(xml: string): string[] {
   const pattern = /<loc>\s*([^<]+)\s*<\/loc>/gi;
   let match: RegExpExecArray | null;
   while ((match = pattern.exec(xml)) && locs.length < 80) {
-    locs.push((match[1] ?? "").replace(/&/g, "&").trim());
+    locs.push((match[1] ?? "").replace(/&amp;/g, "&").trim());
   }
   return locs;
 }

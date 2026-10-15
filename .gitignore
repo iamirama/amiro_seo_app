@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+dist/
+build/
+.output/
+.nitro/
+.vercel/
+.netlify/
+
+# Generated files
+src/routeTree.gen.ts
+*.tsbuildinfo
+
+# Environment
+.env
+.env.local
+.env.*.local
+.grok/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor & OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Local inspections & backups
+seo-project-inspection.txt
+seo-inspect.sh
+*.bak
+*.backup
+
+# Attachments (personal files)
+attachments/
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Cache
+.cache/
+.temp/
+.tmp/
