@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #101614;
+  --color-surface: #18211d;
+  --color-surface-2: #24302a;
+  --color-fg: #e8f2ec;
+  --color-muted: #93a79c;
+  --color-primary: #d6f25c;
+  --color-ink: #17210c;
+  --color-line: #31443b;
+  --color-crit: #ff6b57;
+  --color-high: #ffb15a;
+  --color-med: #e6d38a;
+  --color-low: #8fd0e8;
+  --color-ok: #5ddeaf;
+  --color-info: #b7c4bc;
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --radius-lg: 16px;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    min-height: 100%;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+}
+
+@utility field {
+  width: 100%;
+  border: 1px solid var(--color-line);
+  background: var(--color-bg);
+  color: var(--color-fg);
+  border-radius: 10px;
+  padding: 0.7rem 0.8rem;
+  font: inherit;
+}
+
+@utility btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 44px;
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+@utility btn-primary {
+  background: var(--color-primary);
+  color: var(--color-ink);
+}
+
+@utility btn-ghost {
+  background: transparent;
+  color: var(--color-fg);
+  border-color: var(--color-line);
+}
