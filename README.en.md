@@ -23,7 +23,12 @@
 <br/>
 
 🌍 **Languages**: **English** ✅ · [فارسی](./README.md)
+<br/>
+<br/>
 
+<a href="https://seoscan-seven.vercel.app/" target="_blank">
+  <img src="https://img.shields.io/badge/🚀_Live_Demo-Try_Amiro_SEO_App-4F46E5?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" height="45" />
+</a>
 </div>
 
 ---
