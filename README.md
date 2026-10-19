@@ -1,105 +1,117 @@
-# 🚀 Amiro SEO App (Northline)
-[English](README.en.md) | [فارسی](README.md)
+<div align="center" dir="rtl">
 
-> **آدیت سایت‌های عمومی. امتیازها فقط بر اساس داده‌هایی محاسبه می‌شن که واقعاً جمع‌آوری شده‌اند.**  
-> یک ابزار آدیت سئوی تکنیکال رایگان‌محور که سایت را کرال می‌کند، هر یافته را توضیح می‌دهد و یک گزارش کاملاً آفلاین تولید می‌کند. APIهای سئوی پولی **اختیاری** هستند — اگر ارائه‌دهنده‌ای متصل نباشد، هیچ داده‌ای به‌صورت مصنوعی پر نمی‌شود.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=200&section=header&text=Amiro%20SEO&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38" width="100%"/>
 
-<p align="left">
-  <a href="https://github.com/iamirama/amiro_seo_app"><img src="https://img.shields.io/github/stars/iamirama/amiro_seo_app?style=social" alt="GitHub stars"></a>
-  <a href="https://github.com/iamirama/amiro_seo_app/network/members"><img src="https://img.shields.io/github/forks/iamirama/amiro_seo_app?style=social" alt="GitHub forks"></a>
-  <a href="https://github.com/iamirama/amiro_seo_app/blob/main/LICENSE"><img src="https://img.shields.io/github/license/iamirama/amiro_seo_app" alt="License"></a>
-  <a href="https://seoscan-seven.vercel.app/"><img src="https://img.shields.io/badge/Live%20Demo-Northline-0ea5e9?style=flat-square&logo=vercel" alt="Live Demo"></a>
-</p>
+### 🚀 آدیت سئوی تکنیکال. داده‌های واقعی. بدون بزرگ‌نمایی.
 
-<p align="left">
-  <img src="https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=white" alt="Next.js">
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" alt="TypeScript">
-  <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
-  <img src="https://img.shields.io/badge/Drizzle%20ORM-C5F74F?logo=drizzle&logoColor=black" alt="Drizzle ORM">
-  <img src="https://img.shields.io/badge/Better%20Auth-000?logo=auth0&logoColor=white" alt="Better Auth">
-  <img src="https://img.shields.io/badge/TanStack%20Router-FF4154?logo=reactrouter&logoColor=white" alt="TanStack Router">
-  <img src="https://img.shields.io/badge/Radix%20UI-161618?logo=radixui&logoColor=white" alt="Radix UI">
-</p>
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Drizzle ORM](https://img.shields.io/badge/Drizzle-C5F74F?style=for-the-badge&logo=drizzle&logoColor=black)](https://orm.drizzle.team/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](./LICENSE)
+
+[![Stars](https://img.shields.io/github/stars/iamirama/amiro_seo_app?style=for-the-badge&logo=github&color=FFD700)](https://github.com/iamirama/amiro_seo_app/stargazers)
+[![Forks](https://img.shields.io/github/forks/iamirama/amiro_seo_app?style=for-the-badge&logo=github&color=60a5fa)](https://github.com/iamirama/amiro_seo_app/network)
+[![Issues](https://img.shields.io/github/issues/iamirama/amiro_seo_app?style=for-the-badge&logo=github&color=f87171)](https://github.com/iamirama/amiro_seo_app/issues)
+[![Last Commit](https://img.shields.io/github/last-commit/iamirama/amiro_seo_app?style=for-the-badge&logo=git&color=a78bfa)](https://github.com/iamirama/amiro_seo_app/commits/main)
+
+<br/>
+
+[🚀 شروع سریع](#-شروع-سریع) · [✨ امکانات](#-امکانات) · [🛠 استک فنی](#-استک-فنی) · [🧩 معماری](#-نمای-کلی-معماری) · [☁️ دیپلوی](#️-دیپلوی)
+
+<br/>
+
+🌍 **Languages**: [English](./README.en.md) · **فارسی** ✅
+
+</div>
 
 ---
 
-## 📖 فهرست مطالب
+<div dir="rtl">
 
-- [✨ امکانات](#-امکانات)
-- [🛠 استک فنی](#-استک-فنی)
-- [🏗 نمای کلی معماری](#-نمای-کلی-معماری)
-- [🚀 شروع به کار](#-شروع-به-کار)
-  - [پیش‌نیازها](#پیشنیازها)
-  - [نصب](#نصب)
-  - [متغیرهای محیطی](#متغیرهای-محیطی)
-  - [راه‌اندازی دیتابیس](#راهاندازی-دیتابیس)
-  - [اجرای لوکال](#اجرای-لوکال)
-- [📜 اسکریپت‌های موجود](#-اسکریپتهای-موجود)
-- [📁 ساختار پروژه](#-ساختار-پروژه)
-- [☁️ دیپلوی](#️-دیپلوی)
-- [🤝 مشارکت](#-مشارکت)
-- [📄 لایسنس](#-لایسنس)
+## 📌 این پروژه چیست؟
+
+**Amiro SEO** یک ابزار آدیت سئوی تکنیکال رایگان‌محور است که سایت را کرال می‌کند، هر یافته را توضیح می‌دهد و یک گزارش کاملاً آفلاین تولید می‌کند. APIهای سئوی پولی **اختیاری** هستند — اگر ارائه‌دهنده‌ای متصل نباشد، هیچ داده‌ای به‌صورت مصنوعی پر نمی‌شود.
+
+این پروژه برای توسعه‌دهنده‌ها و متخصصان سئو ساخته شده که می‌خوان آدیت‌های شفاف و مبتنی بر داده واقعی داشته باشن، بدون هزینه‌های پنهان.
 
 ---
 
 ## ✨ امکانات
 
-- 🔍 **آدیت عمیق تکنیکال** – هر URL عمومی را کرال می‌کند و **بیش از ۴۰۰ فاکتور آن‌پیج** را بررسی می‌کند (تگ‌های متا، هدینگ‌ها، تصاویر، داده‌های ساختاریافته، سیگنال‌های پرفورمنس، هدرهای امنیتی، لینک‌های شکسته و…).
-- 🧠 **پیشنهاد رفع مشکل با هوش مصنوعی** – از یک ارائه‌دهنده LLM قابل تنظیم (مثل OpenAI) استفاده می‌کند تا برای هر مشکل پیدا شده، راهکار عملی ارائه بده. *کلید API خودت را وصل کن؛ هیچ هزینه پنهانی وجود ندارد.*
-- 📊 **امتیازدهی شفاف و واقعی** – امتیازها **فقط بر اساس داده‌های واقعاً جمع‌آوری‌شده** محاسبه می‌شوند. اگر API پولی وصل نباشد، فاکتورهای مربوطه به‌عنوان *نامشخص* علامت می‌خورند و به‌درستی جریمه نمی‌شوند.
-- 🔌 **اتصال اختیاری به APIهای پولی** – می‌توانی Ahrefs، Semrush، Moz، Majestic یا مشابه را وصل کنی. وقتی متصل باشند، داده‌ها آدیت را غنی‌تر می‌کنند؛ وقتی وصل نباشند، آدیت همچنان با داده‌های رایگان کامل کار می‌کند.
-- 📄 **گزارش آماده آفلاین** – کل آدیت را می‌توان به‌صورت **یک فایل HTML یا PDF مستقل** دانلود کرد که بدون اینترنت هم باز و قابل اشتراک‌گذاری است.
-- 🔐 **حساب کاربری و تاریخچه** – کاربران احراز هویت‌شده می‌توانند آدیت‌ها را ذخیره کنند، گزارش‌های قبلی را ببینند و کلیدهای API هر پروژه را مدیریت کنند.
-- ⚙️ **تنظیمات و مدیریت ارائه‌دهنده‌ها** – یک صفحه تنظیمات اختصاصی برای ذخیره امن کلیدهای API و انتخاب ارائه‌دهنده‌های فعال.
-- 🌙 **رابط کاربری مدرن** – ساخته‌شده با Radix UI، Tailwind CSS و یک سیستم طراحی منسجم (پالت دستور CMDK، جدول‌های ریسپانسیو، آماده دارک‌مود).
+| | ویژگی | توضیح |
+|---|---|---|
+| 🔍 | **آدیت عمیق تکنیکال** | هر URL عمومی را کرال می‌کند و **بیش از ۴۰۰ فاکتور آن‌پیج** را بررسی می‌کند (تگ‌های متا، هدینگ‌ها، تصاویر، داده‌های ساختاریافته، سیگنال‌های پرفورمنس، هدرهای امنیتی، لینک‌های شکسته و…). |
+| 🤖 | **پیشنهاد رفع مشکل با هوش مصنوعی** | از یک ارائه‌دهنده LLM قابل تنظیم (مثل OpenAI) استفاده می‌کند تا برای هر مشکل پیدا شده، راهکار عملی ارائه بده. *کلید API خودت را وصل کن؛ هیچ هزینه پنهانی وجود ندارد.* |
+| ✅ | **امتیازدهی شفاف و واقعی** | امتیازها **فقط بر اساس داده‌های واقعاً جمع‌آوری‌شده** محاسبه می‌شوند. اگر API پولی وصل نباشد، فاکتورهای مربوطه به‌عنوان *نامشخص* علامت می‌خورند و به‌درستی جریمه نمی‌شوند. |
+| 🔌 | **اتصال اختیاری به APIهای پولی** | می‌توانی Ahrefs، Semrush، Moz، Majestic یا مشابه را وصل کنی. وقتی متصل باشند، داده‌ها آدیت را غنی‌تر می‌کنند؛ وقتی وصل نباشند، آدیت همچنان با داده‌های رایگان کامل کار می‌کند. |
+| 📄 | **گزارش آماده آفلاین** | کل آدیت را می‌توان به‌صورت **یک فایل HTML یا PDF مستقل** دانلود کرد که بدون اینترنت هم باز و قابل اشتراک‌گذاری است. |
+| 👤 | **حساب کاربری و تاریخچه** | کاربران احراز هویت‌شده می‌توانند آدیت‌ها را ذخیره کنند، گزارش‌های قبلی را ببینند و کلیدهای API هر پروژه را مدیریت کنند. |
+| ⚙️ | **تنظیمات و مدیریت ارائه‌دهنده‌ها** | یک صفحه تنظیمات اختصاصی برای ذخیره امن کلیدهای API و انتخاب ارائه‌دهنده‌های فعال. |
+| 🎨 | **رابط کاربری مدرن** | ساخته‌شده با Radix UI، Tailwind CSS و یک سیستم طراحی منسجم (پالت دستور CMDK، جدول‌های ریسپانسیو، آماده دارک‌مود). |
 
-> **دمو آنلاین:** [https://seoscan-seven.vercel.app/](https://seoscan-seven.vercel.app/)  
+> **دمو آنلاین:** [https://seoscan-seven.vercel.app/](https://seoscan-seven.vercel.app/)
 > دمو جریان اصلی آدیت را بدون نیاز به ثبت‌نام نشان می‌دهد.
 
 ---
 
 ## 🛠 استک فنی
 
+<div align="center">
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Radix UI](https://img.shields.io/badge/Radix_UI-161618?style=flat-square&logo=radixui&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Drizzle ORM](https://img.shields.io/badge/Drizzle-C5F74F?style=flat-square&logo=drizzle&logoColor=black)
+![Zod](https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white)
+![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+
+</div>
+
 | لایه | تکنولوژی |
-|-------|------------|
-| **فریمورک** | [Next.js](https://nextjs.org/) (App Router) + [TanStack Router](https://tanstack.com/router) |
-| **زبان** | [TypeScript](https://www.typescriptlang.org/) |
-| **استایل‌دهی** | [Tailwind CSS](https://tailwindcss.com/) + [Radix UI](https://www.radix-ui.com/) |
-| **State / دیتا** | [TanStack Query](https://tanstack.com/query) + [TanStack Table](https://tanstack.com/table) |
-| **دیتابیس** | [PostgreSQL](https://www.postgresql.org/) با [Drizzle ORM](https://orm.drizzle.team/) (به‌همراه [PGlite](https://pglite.dev/) برای حالت امبدد/لوکال) |
-| **احراز هویت** | [Better Auth](https://better-auth.com/) |
-| **اعتبارسنجی** | [Zod](https://zod.dev/) |
-| **فرم‌ها** | [React Hook Form](https://react-hook-form.com/) |
-| **کرال سئو** | [Cheerio](https://cheerio.js.org/) + موتور پارس HTML سفارشی |
-| **نمودار** | [D3.js](https://d3js.org/) (via `d3-scale`, `d3-shape`, …) |
-| **ابزارهای CLI** | [CMDK](https://cmdk.paco.me/)، [date-fns](https://date-fns.org/)، [clsx](https://github.com/lukeed/clsx) |
-| **تست** | [Vitest](https://vitest.dev/) |
-| **لینت / فرمت** | [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) |
-| **دیپلوی** | [Vercel](https://vercel.com/) |
+|---|---|
+| **فریمورک** | Next.js (App Router) + TanStack Router |
+| **زبان** | TypeScript |
+| **استایل‌دهی** | Tailwind CSS + Radix UI |
+| **State / دیتا** | TanStack Query + TanStack Table |
+| **دیتابیس** | PostgreSQL با Drizzle ORM (به‌همراه PGlite برای حالت امبدد/لوکال) |
+| **احراز هویت** | Better Auth |
+| **اعتبارسنجی** | Zod |
+| **فرم‌ها** | React Hook Form |
+| **کرال سئو** | Cheerio + موتور پارس HTML سفارشی |
+| **نمودار** | D3.js (via `d3-scale`, `d3-shape`, …) |
+| **ابزارهای CLI** | CMDK، date-fns، clsx |
+| **تست** | Vitest |
+| **لینت / فرمت** | ESLint + Prettier |
+| **دیپلوی** | Vercel |
 
 ---
 
-## 🏗 نمای کلی معماری
+## 🧩 نمای کلی معماری
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    Client (Next.js / React)              │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐  │
-│  │  Audit UI   │  │  Settings   │  │  Report Viewer  │  │
-│  └─────────────┘  └─────────────┘  └─────────────────┘  │
+│ Client (Next.js / React)                                │
+│ ┌─────────────┐ ┌─────────────┐ ┌─────────────────┐    │
+│ │ Audit UI    │ │ Settings    │ │ Report Viewer   │    │
+│ └─────────────┘ └─────────────┘ └─────────────────┘    │
 └──────────────────────────┬──────────────────────────────┘
-                           │  (TanStack Query / Router)
+                           │ (TanStack Query / Router)
 ┌──────────────────────────▼──────────────────────────────┐
-│                 Server (Next.js API / RPC)               │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐  │
-│  │  Audit      │  │  Auth       │  │  Provider       │  │
-│  │  Engine     │  │  (Better)   │  │  Connectors     │  │
-│  └──────┬──────┘  └──────┬──────┘  └────────┬────────┘  │
-│         │                │                   │           │
-│  ┌──────▼────────────────▼───────────────────▼────────┐  │
-│  │              Drizzle ORM (PostgreSQL)              │  │
-│  └────────────────────────────────────────────────────┘  │
-└──────────────────────────────────────────────────────────┘
+│ Server (Next.js API / RPC)                              │
+│ ┌─────────────┐ ┌─────────────┐ ┌─────────────────┐    │
+│ │ Audit       │ │ Auth        │ │ Provider        │    │
+│ │ Engine      │ │ (Better)    │ │ Connectors      │    │
+│ └──────┬──────┘ └──────┬──────┘ └────────┬────────┘    │
+│        │               │                  │             │
+│ ┌──────▼───────────────▼──────────────────▼────────┐    │
+│ │ Drizzle ORM (PostgreSQL)                        │    │
+│ └─────────────────────────────────────────────────┘    │
+└─────────────────────────────────────────────────────────┘
 ```
 
 - **موتور آدیت** – URL هدف را واکشی، DOM را با Cheerio پارس و مجموعه‌ای از قوانین بررسی را اجرا می‌کند.
@@ -109,46 +121,41 @@
 
 ---
 
-## 🚀 شروع به کار
+## ⚡ شروع سریع
 
-### پیش‌نیازها
+### 1️⃣ پیش‌نیازها
 
 - **Node.js** `≥ 20` (یا `bun` / `pnpm`)
 - **PostgreSQL** `≥ 14` (یا از **PGlite** برای دیتابیس امبدد بدون تنظیمات استفاده کن)
 - یک مرورگر مدرن (Chrome, Firefox, Safari, Edge)
 
-### نصب
+### 2️⃣ کلون و نصب
 
-```bash
-# 1. کلون کردن ریپازیتوری
+```
 git clone https://github.com/iamirama/amiro_seo_app.git
 cd amiro_seo_app
-
-# 2. نصب وابستگی‌ها
 npm install
-# یا
-pnpm install
-# یا
-bun install
+# or pnpm install
+# or bun install
 ```
 
-### متغیرهای محیطی
+### 3️⃣ متغیرهای محیطی
 
-یک فایل `.env.local` در ریشه پروژه بساز و مقادیر زیر را پر کن:
+یک فایل `.env.local` در ریشه پروژه بساز:
 
-```env
-# ── دیتابیس ──────────────────────────────────────────────
+```
+# ── Database ─────────────────────────────────
 DATABASE_URL="postgresql://user:password@localhost:5432/amiro_seo"
 
-# ── احراز هویت (Better Auth) ─────────────────────────────
-BETTER_AUTH_SECRET="یک-رمز-۳۲-کاراکتری"
+# ── Auth (Better Auth) ───────────────────────
+BETTER_AUTH_SECRET="a-32-character-secret"
 BETTER_AUTH_URL="http://localhost:3000"
 
-# ── اختیاری: ارائه‌دهنده هوش مصنوعی ──────────────────────
+# ── Optional: AI Provider ────────────────────
 OPENAI_API_KEY="sk-..."
-# AI_MODEL="gpt-4o-mini"
+AI_MODEL="gpt-4o-mini"
 
-# ── اختیاری: APIهای سئوی پولی ────────────────────────────
+# ── Optional: Paid SEO APIs ──────────────────
 # AHREFS_API_KEY=""
 # SEMRUSH_API_KEY=""
 # MOZ_ACCESS_ID=""
@@ -157,9 +164,9 @@ OPENAI_API_KEY="sk-..."
 
 > **نکته:** همه‌ی کلیدهای API پولی **اختیاری** هستند. اپ بدون آن‌ها هم اجرا می‌شود و آدیت معنادار تولید می‌کند؛ فقط آن نقاط داده به‌عنوان «در دسترس نیست» علامت می‌خورند.
 
-### راه‌اندازی دیتابیس
+### 4️⃣ راه‌اندازی دیتابیس
 
-```bash
+```
 # تولید فایل‌های مایگریشن (در صورت تغییر اسکیما)
 npm run db:generate
 
@@ -170,18 +177,21 @@ npm run db:migrate
 npm run db:push
 ```
 
-اگر می‌خواهی از **PGlite** استفاده کنی (بدون نیاز به دیتابیس خارجی)، مقدار `DATABASE_URL="pglite://./.pglite"` را ست کن تا از موتور Postgres امبدد استفاده شود.
+برای استفاده از **PGlite** (بدون نیاز به دیتابیس خارجی):
+```
+DATABASE_URL="pglite://./.pglite"
+```
 
-### اجرای لوکال
+### 5️⃣ اجرای لوکال
 
-```bash
+```
 npm run dev
 ```
 
-سپس در مرورگر به [http://localhost:3000](http://localhost:3000) برو.  
-برای اجرای بیلد پروداکشن به‌صورت لوکال:
+سپس در مرورگر به **http://localhost:3000** برو.
 
-```bash
+برای اجرای بیلد پروداکشن به‌صورت لوکال:
+```
 npm run build
 npm run start
 ```
@@ -191,7 +201,7 @@ npm run start
 ## 📜 اسکریپت‌های موجود
 
 | اسکریپت | توضیح |
-|--------|-------------|
+|---|---|
 | `npm run dev` | اجرای سرور توسعه (hot-reload) |
 | `npm run build` | ساخت بیلد پروداکشن بهینه‌شده |
 | `npm run start` | اجرای سرور پروداکشن |
@@ -209,23 +219,23 @@ npm run start
 
 ```
 amiro_seo_app/
-├── migrations/               # مایگریشن‌های SQL (Drizzle)
+├── migrations/              # مایگریشن‌های SQL (Drizzle)
 │   ├── 0002_seo.sql
 │   └── auth/
 │       └── 0001_auth.sql
-├── public/                   # فایل‌های استاتیک
-├── screenshots/              # اسکرین‌شات‌ها برای README و دمو
-├── scripts/                  # اسکریپت‌های کاربردی (seed و…)
-├── server/                   # نقاط ورودی سمت سرور (در صورت وجود)
+├── public/                  # فایل‌های استاتیک
+├── screenshots/             # اسکرین‌شات‌ها برای README و دمو
+├── scripts/                 # اسکریپت‌های کاربردی (seed و…)
+├── server/                  # نقاط ورودی سمت سرور (در صورت وجود)
 ├── src/
-│   ├── app/                  # صفحات App Router در Next.js
-│   ├── components/           # کامپوننت‌های UI قابل استفاده مجدد (Radix + Tailwind)
-│   ├── db/                   # اسکیما، کلاینت و آداپترهای Drizzle
-│   ├── features/             # ماژول‌های فیچر (audit, auth, settings)
-│   ├── lib/                  # ابزارها، هوک‌ها و هلپرهای مشترک
-│   ├── providers/            # Context Providerها (Query, Auth, Theme)
-│   └── styles/               # CSS سراسری / لایه‌های Tailwind
-├── .env.example              # نمونه متغیرهای محیطی
+│   ├── app/                 # صفحات App Router در Next.js
+│   ├── components/          # کامپوننت‌های UI قابل استفاده مجدد (Radix + Tailwind)
+│   ├── db/                  # اسکیما، کلاینت و آداپترهای Drizzle
+│   ├── features/            # ماژول‌های فیچر (audit, auth, settings)
+│   ├── lib/                 # ابزارها، هوک‌ها و هلپرهای مشترک
+│   ├── providers/           # Context Providerها (Query, Auth, Theme)
+│   └── styles/              # CSS سراسری / لایه‌های Tailwind
+├── .env.example             # نمونه متغیرهای محیطی
 ├── eslint.config.mjs
 ├── package.json
 ├── tsconfig.json
@@ -243,7 +253,7 @@ amiro_seo_app/
 1. کدت را روی GitHub پوش کن.
 2. ریپازیتوری را در [Vercel](https://vercel.com/new) ایمپورت کن.
 3. **متغیرهای محیطی** بالا را در داشبورد Vercel اضافه کن.
-4. دیپلوی کن 🎉
+4. دیپلوی کن.
 
 > **نمونه زنده:** [https://seoscan-seven.vercel.app/](https://seoscan-seven.vercel.app/)
 
@@ -263,18 +273,26 @@ amiro_seo_app/
 4. برنچ را پوش کن: `git push origin feat/amazing-feature`
 5. یک **Pull Request** باز کن.
 
-قبل از ارسال PR لطفاً `npm run lint` و `npm run test` را اجرا کن.  
-برای تغییرات بزرگ، ابتدا یک issue باز کن تا درباره ایده‌ات صحبت کنیم.
+قبل از ارسال PR لطفاً `npm run lint` و `npm run test` را اجرا کن. برای تغییرات بزرگ، ابتدا یک issue باز کن تا درباره ایده‌ات صحبت کنیم.
 
 ---
 
 ## 📄 لایسنس
 
-تحت لایسنس **MIT** منتشر شده است. برای اطلاعات بیشتر فایل [`LICENSE`](https://github.com/iamirama/amiro_seo_app/blob/main/LICENSE) را ببین.
+تحت لایسنس **MIT** منتشر شده است. برای اطلاعات بیشتر فایل [`LICENSE`](./LICENSE) را ببین.
 
 ---
 
-<p align="center">
-  ساخته‌شده با ❤️ توسط <a href="https://github.com/iamirama">ایمان آراما</a><br>
-  <sub>اگر این پروژه به کارت آمد، یک ⭐️ روی GitHub فراموش نشود!</sub>
-</p>
+<div align="center">
+
+### ⭐ اگه این پروژه به کارت اومد، یه ستاره بده!
+
+[![Star](https://img.shields.io/badge/⭐_ستاره_بده_به_این_ریپو-FFD700?style=for-the-badge&logo=github&logoColor=black)](https://github.com/iamirama/amiro_seo_app)
+
+<sub>ساخته شده با ❤️ توسط <a href="https://github.com/amirhoseini">Amirhoseini</a></sub>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=120&section=footer" width="100%"/>
+
+</div>
+
+</div>

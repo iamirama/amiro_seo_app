@@ -1,186 +1,195 @@
-# 🚀 Amiro SEO App (Northline)
-[English](README.en.md) | [فارسی](README.md)
-> **Public-site audits. Scores only count data that was actually collected.**  
-> A free-first technical SEO auditor that crawls a site, explains every finding, and generates an offline-ready report. Paid SEO APIs stay **optional** — nothing is filled in when a provider is disconnected.
+<div align="center">
 
-<p align="left">
-  <a href="https://github.com/iamirama/amiro_seo_app"><img src="https://img.shields.io/github/stars/iamirama/amiro_seo_app?style=social" alt="GitHub stars"></a>
-  <a href="https://github.com/iamirama/amiro_seo_app/network/members"><img src="https://img.shields.io/github/forks/iamirama/amiro_seo_app?style=social" alt="GitHub forks"></a>
-  <a href="https://github.com/iamirama/amiro_seo_app/blob/main/LICENSE"><img src="https://img.shields.io/github/license/iamirama/amiro_seo_app" alt="License"></a>
-  <a href="https://seoscan-seven.vercel.app/"><img src="https://img.shields.io/badge/Live%20Demo-Northline-0ea5e9?style=flat-square&logo=vercel" alt="Live Demo"></a>
-</p>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=200&section=header&text=Amiro%20SEO&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38" width="100%"/>
 
-<p align="left">
-  <img src="https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=white" alt="Next.js">
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" alt="TypeScript">
-  <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
-  <img src="https://img.shields.io/badge/Drizzle%20ORM-C5F74F?logo=drizzle&logoColor=black" alt="Drizzle ORM">
-  <img src="https://img.shields.io/badge/Better%20Auth-000?logo=auth0&logoColor=white" alt="Better Auth">
-  <img src="https://img.shields.io/badge/TanStack%20Router-FF4154?logo=reactrouter&logoColor=white" alt="TanStack Router">
-  <img src="https://img.shields.io/badge/Radix%20UI-161618?logo=radixui&logoColor=white" alt="Radix UI">
-</p>
+### 🚀 Technical SEO audits. Real data. Zero fluff.
+
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Drizzle ORM](https://img.shields.io/badge/Drizzle-C5F74F?style=for-the-badge&logo=drizzle&logoColor=black)](https://orm.drizzle.team/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](./LICENSE)
+
+[![Stars](https://img.shields.io/github/stars/iamirama/amiro_seo_app?style=for-the-badge&logo=github&color=FFD700)](https://github.com/iamirama/amiro_seo_app/stargazers)
+[![Forks](https://img.shields.io/github/forks/iamirama/amiro_seo_app?style=for-the-badge&logo=github&color=60a5fa)](https://github.com/iamirama/amiro_seo_app/network)
+[![Issues](https://img.shields.io/github/issues/iamirama/amiro_seo_app?style=for-the-badge&logo=github&color=f87171)](https://github.com/iamirama/amiro_seo_app/issues)
+[![Last Commit](https://img.shields.io/github/last-commit/iamirama/amiro_seo_app?style=for-the-badge&logo=git&color=a78bfa)](https://github.com/iamirama/amiro_seo_app/commits/main)
+
+<br/>
+
+[🚀 Quick Start](#-quick-start) · [✨ Features](#-features) · [🛠 Tech Stack](#-tech-stack) · [🧩 Architecture](#-architecture-overview) · [☁️ Deploy](#️-deploy)
+
+<br/>
+
+🌍 **Languages**: **English** ✅ · [فارسی](./README.md)
+
+</div>
 
 ---
 
-## 📖 Table of Contents
+## 📌 What is this?
 
-- [✨ Features](#-features)
-- [🛠 Tech Stack](#-tech-stack)
-- [🏗 Architecture Overview](#-architecture-overview)
-- [🚀 Getting Started](#-getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Environment Variables](#environment-variables)
-  - [Database Setup](#database-setup)
-  - [Running Locally](#running-locally)
-- [📜 Available Scripts](#-available-scripts)
-- [📁 Project Structure](#-project-structure)
-- [☁️ Deployment](#️-deployment)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
+**Amiro SEO** is a free-first technical SEO audit tool that crawls any public website, explains every finding, and generates a fully offline report. Paid SEO APIs are **optional** — if no provider is connected, no data is artificially fabricated.
+
+Built for developers and SEO specialists who want transparent, real-data audits without hidden costs.
 
 ---
 
 ## ✨ Features
 
-- 🔍 **Deep Technical Audits** – Crawls any public URL and checks **400+ on-page factors** (meta tags, headings, images, structured data, performance signals, security headers, broken links, and more).
-- 🧠 **AI-Powered Fix Suggestions** – Uses a configurable LLM provider (e.g., OpenAI) to generate actionable recommendations for every issue found. *Bring your own key; no hidden infrastructure costs.*
-- 📊 **Scoring That Tells the Truth** – Scores are computed **only from data that was actually collected**. If a paid API is not connected, the related factors are marked as *unknown* rather than falsely penalised.
-- 🔌 **Optional Paid-API Integrations** – Plug in Ahrefs, Semrush, Moz, Majestic, or similar providers. When connected, their data enriches the audit; when disconnected, the audit still works flawlessly with free-first data.
-- 📄 **Offline-Ready Reports** – Download the full audit as a **self-contained HTML or PDF file** that can be shared, archived, and opened without an internet connection.
-- 🔐 **User Accounts & History** – Authenticated users can save audits, revisit past reports, and manage API credentials per project.
-- ⚙️ **Settings & Provider Management** – A dedicated settings page lets you store API keys securely and choose which providers to enable.
-- 🌙 **Modern UI/UX** – Built with Radix UI primitives, Tailwind CSS, and a polished design system (CMDK command palette, responsive tables, dark-mode ready).
+| | Feature | Description |
+|---|---|---|
+| 🔍 | **Deep Technical Audit** | Crawls every public URL and checks **400+ on-page factors** (meta tags, headings, images, structured data, performance signals, security headers, broken links, and more). |
+| 🤖 | **AI-Powered Remedies** | Uses a configurable LLM provider (e.g. OpenAI) to suggest actionable fixes for each issue found. *Bring your own API key — no hidden costs.* |
+| ✅ | **Transparent Scoring** | Scores are calculated **only from data actually collected**. If a paid API isn't connected, those factors are marked as *unknown* and are not unfairly penalized. |
+| 🔌 | **Optional Paid API Integrations** | Connect Ahrefs, Semrush, Moz, Majestic, or similar. When connected, data enriches the audit; when not, the audit still works fully with free data. |
+| 📄 | **Offline-Ready Report** | Download the entire audit as a **standalone HTML or PDF file** that opens and can be shared without an internet connection. |
+| 👤 | **User Accounts & History** | Authenticated users can save audits, view past reports, and manage API keys per project. |
+| ⚙️ | **Settings & Provider Management** | A dedicated settings page for securely storing API keys and selecting active providers. |
+| 🎨 | **Modern UI** | Built with Radix UI, Tailwind CSS, and a cohesive design system (CMDK command palette, responsive tables, dark-mode ready). |
 
-> **Live Demo:** [https://seoscan-seven.vercel.app/](https://seoscan-seven.vercel.app/)  
-> The demo shows the core audit flow without requiring a sign-up.
+> **Live Demo:** [https://seoscan-seven.vercel.app/](https://seoscan-seven.vercel.app/)
+> Demonstrates the core audit flow without requiring registration.
 
 ---
 
 ## 🛠 Tech Stack
 
+<div align="center">
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Radix UI](https://img.shields.io/badge/Radix_UI-161618?style=flat-square&logo=radixui&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Drizzle ORM](https://img.shields.io/badge/Drizzle-C5F74F?style=flat-square&logo=drizzle&logoColor=black)
+![Zod](https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white)
+![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+
+</div>
+
 | Layer | Technology |
-|-------|------------|
-| **Framework** | [Next.js](https://nextjs.org/) (App Router) + [TanStack Router](https://tanstack.com/router) |
-| **Language** | [TypeScript](https://www.typescriptlang.org/) |
-| **Styling** | [Tailwind CSS](https://tailwindcss.com/) + [Radix UI](https://www.radix-ui.com/) |
-| **State / Data Fetching** | [TanStack Query](https://tanstack.com/query) + [TanStack Table](https://tanstack.com/table) |
-| **Database** | [PostgreSQL](https://www.postgresql.org/) via [Drizzle ORM](https://orm.drizzle.team/) (with optional [PGlite](https://pglite.dev/) for local/embedded use) |
-| **Authentication** | [Better Auth](https://better-auth.com/) |
-| **Validation** | [Zod](https://zod.dev/) |
-| **Forms** | [React Hook Form](https://react-hook-form.com/) |
-| **SEO Crawling** | [Cheerio](https://cheerio.js.org/) + custom HTML parsing engine |
-| **Charts / Visualisation** | [D3.js](https://d3js.org/) (via `d3-scale`, `d3-shape`, etc.) |
-| **CLI / Utilities** | [CMDK](https://cmdk.paco.me/), [date-fns](https://date-fns.org/), [clsx](https://github.com/lukeed/clsx) |
-| **Testing** | [Vitest](https://vitest.dev/) |
-| **Linting / Formatting** | [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) |
-| **Deployment** | [Vercel](https://vercel.com/) |
+|---|---|
+| **Framework** | Next.js (App Router) + TanStack Router |
+| **Language** | TypeScript |
+| **Styling** | Tailwind CSS + Radix UI |
+| **State / Data** | TanStack Query + TanStack Table |
+| **Database** | PostgreSQL with Drizzle ORM (plus PGlite for embedded/local mode) |
+| **Authentication** | Better Auth |
+| **Validation** | Zod |
+| **Forms** | React Hook Form |
+| **SEO Crawling** | Cheerio + custom HTML parser engine |
+| **Charts** | D3.js (via `d3-scale`, `d3-shape`, …) |
+| **CLI Tools** | CMDK, date-fns, clsx |
+| **Testing** | Vitest |
+| **Lint / Format** | ESLint + Prettier |
+| **Deploy** | Vercel |
 
 ---
 
-## 🏗 Architecture Overview
+## 🧩 Architecture Overview
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    Client (Next.js / React)              │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐  │
-│  │  Audit UI   │  │  Settings   │  │  Report Viewer  │  │
-│  └─────────────┘  └─────────────┘  └─────────────────┘  │
+│ Client (Next.js / React)                                │
+│ ┌─────────────┐ ┌─────────────┐ ┌─────────────────┐    │
+│ │ Audit UI    │ │ Settings    │ │ Report Viewer   │    │
+│ └─────────────┘ └─────────────┘ └─────────────────┘    │
 └──────────────────────────┬──────────────────────────────┘
-                           │  (TanStack Query / Router)
+                           │ (TanStack Query / Router)
 ┌──────────────────────────▼──────────────────────────────┐
-│                 Server (Next.js API / RPC)               │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐  │
-│  │  Audit      │  │  Auth       │  │  Provider       │  │
-│  │  Engine     │  │  (Better)   │  │  Connectors     │  │
-│  └──────┬──────┘  └──────┬──────┘  └────────┬────────┘  │
-│         │                │                   │           │
-│  ┌──────▼────────────────▼───────────────────▼────────┐  │
-│  │              Drizzle ORM (PostgreSQL)              │  │
-│  └────────────────────────────────────────────────────┘  │
-└──────────────────────────────────────────────────────────┘
+│ Server (Next.js API / RPC)                              │
+│ ┌─────────────┐ ┌─────────────┐ ┌─────────────────┐    │
+│ │ Audit       │ │ Auth        │ │ Provider        │    │
+│ │ Engine      │ │ (Better)    │ │ Connectors      │    │
+│ └──────┬──────┘ └──────┬──────┘ └────────┬────────┘    │
+│        │               │                  │             │
+│ ┌──────▼───────────────▼──────────────────▼────────┐    │
+│ │ Drizzle ORM (PostgreSQL)                        │    │
+│ └─────────────────────────────────────────────────┘    │
+└─────────────────────────────────────────────────────────┘
 ```
 
-- **Audit Engine** – Fetches the target URL, parses the DOM with Cheerio, runs a suite of rule-based checks, and optionally enriches findings with external APIs.
-- **Provider Connectors** – Isolated modules for each paid SEO API. They are **opt-in** and degrade gracefully when credentials are missing.
-- **Report Serializer** – Transforms the audit result into a standalone HTML document with inline CSS and images, so it can be saved and shared offline.
-- **Auth & Persistence** – User sessions, saved audits, and encrypted provider keys are stored in PostgreSQL via Drizzle.
+- **Audit Engine** – Fetches the target URL, parses the DOM with Cheerio, and runs a suite of check rules.
+- **Provider Connectors** – Separate modules for each paid SEO API. They are **optional** and degrade gracefully when credentials are absent.
+- **Report Serializer** – Converts the audit result into a standalone HTML document with inline CSS and images, ready for offline saving and sharing.
+- **Auth & Persistence** – Sessions, saved audits, and encrypted provider keys are stored in PostgreSQL.
 
 ---
 
-## 🚀 Getting Started
+## ⚡ Quick Start
 
-### Prerequisites
+### 1️⃣ Prerequisites
 
 - **Node.js** `≥ 20` (or `bun` / `pnpm`)
-- **PostgreSQL** `≥ 14` (or use **PGlite** for a zero-config embedded database)
+- **PostgreSQL** `≥ 14` (or use **PGlite** for an embedded, zero-config database)
 - A modern browser (Chrome, Firefox, Safari, Edge)
 
-### Installation
+### 2️⃣ Clone & Install
 
-```bash
-# 1. Clone the repository
+```
 git clone https://github.com/iamirama/amiro_seo_app.git
 cd amiro_seo_app
-
-# 2. Install dependencies
 npm install
-# or
-pnpm install
-# or
-bun install
+# or pnpm install
+# or bun install
 ```
 
-### Environment Variables
+### 3️⃣ Environment Variables
 
-Create a `.env.local` file in the project root and fill in the required values:
+Create a `.env.local` file in the project root:
 
-```env
-# ── Database ──────────────────────────────────────────────
+```
+# ── Database ─────────────────────────────────
 DATABASE_URL="postgresql://user:password@localhost:5432/amiro_seo"
 
-# ── Authentication (Better Auth) ──────────────────────────
-BETTER_AUTH_SECRET="your-32-character-secret"
+# ── Auth (Better Auth) ───────────────────────
+BETTER_AUTH_SECRET="a-32-character-secret"
 BETTER_AUTH_URL="http://localhost:3000"
 
-# ── Optional: AI Provider (for fix suggestions) ───────────
+# ── Optional: AI Provider ────────────────────
 OPENAI_API_KEY="sk-..."
-# AI_MODEL="gpt-4o-mini"
+AI_MODEL="gpt-4o-mini"
 
-# ── Optional: Paid SEO APIs ───────────────────────────────
+# ── Optional: Paid SEO APIs ──────────────────
 # AHREFS_API_KEY=""
 # SEMRUSH_API_KEY=""
 # MOZ_ACCESS_ID=""
 # MOZ_SECRET_KEY=""
 ```
 
-> **Note:** All paid-API keys are **optional**. The app will run and produce meaningful audits without them; the corresponding data points will simply be marked as unavailable.
+> **Note:** All paid API keys are **optional**. The app runs without them and still produces meaningful audits — those data points are simply marked as "unavailable".
 
-### Database Setup
+### 4️⃣ Database Setup
 
-```bash
-# Generate migration files (if you modify the schema)
+```
+# Generate migration files (if schema changed)
 npm run db:generate
 
-# Apply migrations to your database
+# Apply migrations to the database
 npm run db:migrate
 
-# Or push the schema directly (development only)
+# Or push schema directly (development only)
 npm run db:push
 ```
 
-If you prefer **PGlite** (no external database required), set `DATABASE_URL="pglite://./.pglite"` and the app will use the embedded Postgres engine.
+To use **PGlite** (no external database needed), set:
+```
+DATABASE_URL="pglite://./.pglite"
+```
 
-### Running Locally
+### 5️⃣ Run Locally
 
-```bash
+```
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.  
-To run the production build locally:
+Then open **http://localhost:3000**.
 
-```bash
+For a production build locally:
+```
 npm run build
 npm run start
 ```
@@ -190,16 +199,16 @@ npm run start
 ## 📜 Available Scripts
 
 | Script | Description |
-|--------|-------------|
-| `npm run dev` | Start the development server (hot-reload) |
-| `npm run build` | Create an optimised production build |
-| `npm run start` | Start the production server |
-| `npm run lint` | Run ESLint across the codebase |
+|---|---|
+| `npm run dev` | Start development server (hot-reload) |
+| `npm run build` | Build optimized production bundle |
+| `npm run start` | Run production server |
+| `npm run lint` | Run ESLint on the entire codebase |
 | `npm run format` | Format all files with Prettier |
 | `npm run test` | Run unit tests with Vitest |
-| `npm run db:generate` | Generate Drizzle migration files from the schema |
+| `npm run db:generate` | Generate Drizzle migration files from schema |
 | `npm run db:migrate` | Apply pending migrations to the database |
-| `npm run db:push` | Push the schema directly (dev only) |
+| `npm run db:push` | Push schema directly (development only) |
 | `npm run db:studio` | Open Drizzle Studio (database GUI) |
 
 ---
@@ -208,23 +217,23 @@ npm run start
 
 ```
 amiro_seo_app/
-├── migrations/               # Drizzle SQL migrations
+├── migrations/              # SQL migrations (Drizzle)
 │   ├── 0002_seo.sql
 │   └── auth/
 │       └── 0001_auth.sql
-├── public/                   # Static assets
-├── screenshots/              # README / demo screenshots
-├── scripts/                  # Utility scripts (seeding, etc.)
-├── server/                   # Server-side entry points (if any)
+├── public/                  # Static assets
+├── screenshots/             # Screenshots for README & demo
+├── scripts/                 # Utility scripts (seed, etc.)
+├── server/                  # Server-side entry points (if any)
 ├── src/
-│   ├── app/                  # Next.js App Router pages
-│   ├── components/           # Reusable UI components (Radix + Tailwind)
-│   ├── db/                   # Drizzle schema, client, and adapters
-│   ├── features/             # Feature modules (audit, auth, settings)
-│   ├── lib/                  # Shared utilities, hooks, and helpers
-│   ├── providers/            # Context providers (Query, Auth, Theme)
-│   └── styles/               # Global CSS / Tailwind layers
-├── .env.example              # Example environment variables
+│   ├── app/                 # Next.js App Router pages
+│   ├── components/          # Reusable UI components (Radix + Tailwind)
+│   ├── db/                  # Drizzle schema, client, and adapters
+│   ├── features/            # Feature modules (audit, auth, settings)
+│   ├── lib/                 # Shared utilities, hooks, and helpers
+│   ├── providers/           # Context Providers (Query, Auth, Theme)
+│   └── styles/              # Global CSS / Tailwind layers
+├── .env.example             # Sample environment variables
 ├── eslint.config.mjs
 ├── package.json
 ├── tsconfig.json
@@ -233,22 +242,22 @@ amiro_seo_app/
 
 ---
 
-## ☁️ Deployment
+## ☁️ Deploy
 
 ### Vercel (Recommended)
 
-The project is pre-configured for **Vercel**. The standard Next.js preset works out of the box.
+The project is ready for **Vercel**. Default Next.js settings work out of the box.
 
 1. Push your code to GitHub.
-2. Import the repository in [Vercel](https://vercel.com/new).
-3. Add the **Environment Variables** listed above in the Vercel dashboard.
-4. Deploy 🎉
+2. Import the repository on [Vercel](https://vercel.com/new).
+3. Add the **environment variables** listed above in the Vercel dashboard.
+4. Deploy.
 
-> **Live Example:** [https://seoscan-seven.vercel.app/](https://seoscan-seven.vercel.app/)
+> **Live Demo:** [https://seoscan-seven.vercel.app/](https://seoscan-seven.vercel.app/)
 
 ### Other Platforms
 
-Because the app uses standard Next.js and PostgreSQL, it can be deployed to any platform that supports Node.js and a Postgres database (Railway, Fly.io, Render, AWS, etc.). Ensure `DATABASE_URL` and `BETTER_AUTH_URL` are set correctly for the target environment.
+Since the app uses standard Next.js and PostgreSQL, it can be deployed on any platform that supports Node.js and a Postgres database (Railway, Fly.io, Render, AWS, etc.). Just make sure `DATABASE_URL` and `BETTER_AUTH_URL` are correctly configured for the target environment.
 
 ---
 
@@ -256,24 +265,30 @@ Because the app uses standard Next.js and PostgreSQL, it can be deployed to any 
 
 Contributions are welcome! Please follow these steps:
 
-1. **Fork** the repository.
+1. **Fork** the repo.
 2. Create a feature branch: `git checkout -b feat/amazing-feature`
 3. Commit your changes: `git commit -m 'feat: add amazing feature'`
-4. Push to the branch: `git push origin feat/amazing-feature`
+4. Push the branch: `git push origin feat/amazing-feature`
 5. Open a **Pull Request**.
 
-Please make sure to run `npm run lint` and `npm run test` before submitting a PR.  
-For major changes, open an issue first to discuss what you would like to change.
+Before submitting a PR, please run `npm run lint` and `npm run test`. For major changes, open an issue first to discuss your idea.
 
 ---
 
 ## 📄 License
 
-Distributed under the **MIT License**. See the [`LICENSE`](https://github.com/iamirama/amiro_seo_app/blob/main/LICENSE) file for more information.
+Distributed under the **MIT License**. See [`LICENSE`](./LICENSE) for more information.
 
 ---
 
-<p align="center">
-  Made with ❤️ by <a href="https://github.com/iamirama">Iman Arama</a><br>
-  <sub>If this project helped you, consider giving it a ⭐️ on GitHub!</sub>
-</p>
+<div align="center">
+
+### ⭐ If this project helped you, please give it a star!
+
+[![Star](https://img.shields.io/badge/⭐_Star_this_repo-FFD700?style=for-the-badge&logo=github&logoColor=black)](https://github.com/iamirama/amiro_seo_app)
+
+<sub>Made with ❤️ by <a href="https://github.com/amirhoseini">Amirhoseini</a></sub>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=120&section=footer" width="100%"/>
+
+</div>
